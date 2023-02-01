@@ -1,0 +1,56 @@
+/* Body */
+html {
+    overflow-x: hidden;
+  }
+  body {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #000000;
+    /* background-image: url("images/cowrate_wallpaper.png");  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: justify;
+    hyphens: auto;
+  }
+  @font-face { font-family: protomolecule; src: url("fonts/Protomolecule.ttf"); } 
+  p {
+    font-size: 23px;
+  }
+  h1 {
+    font-family: protomolecule;
+    margin-top: 5px;
+  }
+  /* Elements */
+  .image {
+    border-radius: 5px;
+    transition: 0.2s;
+    margin-top: 10px;
+  }
+  .image:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+  }
+  /* cetner div  */ 
+  #page-container {
+    position: relative;
+    margin: 0px;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+
+  }
+  #content-wrap {
+    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  /* Select */
+  ::selection {
+    color: yellow;
+    background: rgb(46, 46, 46);
+  }
