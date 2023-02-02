@@ -7,14 +7,13 @@
         <link rel="stylesheet" type="text/css" href="main.css" />
         <title>Studieneering</title>
         <link rel="icon" href="images/cowfavicon.png">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     </head>
 
     <body> 
         <div id="page-container">
             <div id="content-wrap">
                 <center>
-                    <h1><font style="font-size:80px; color:rgb(0, 175, 255)">studieneering</font></h1>
+                    <h1><font style="color:rgb(0, 175, 255)">studieneering</font></h1>
                 </center>
 
                 <p>
@@ -23,21 +22,16 @@
                     enklare och roligare!
                 </p>
 
-                <div class="nav">
-                    <center>
-                        <a href="https://ebas.sverok.se/blimedlem/SDNE" target="_blank"><img class="image" src="images/cow_arrr.png" alt="CV" width="100%"></img></a>
-                    </center>
-                    <audio id="beep" preload="auto">
-                        <source src="audio/moooo.mp3"></source>
-                    </audio>
-                </div>
-                    
+                <center>
+                    <a href="https://ebas.sverok.se/blimedlem/SDNE" target="_blank">
+                        <img class="image" src="images/cow_arrr.png" onclick="playAudio('audio/moooo.mp3')" alt="holycow!" width="100%">
+                    </a>
+                </center>
+
                 <script>
-                    var beepOne = $("#beep")[0];
-                    $(".nav")
-                    .mouseenter(function() {
-                        beepOne.play();
-                    });
+                    function playAudio(url) {
+                        new Audio(url).play();
+                    }
                 </script>
 
                 <center>
