@@ -1,4 +1,4 @@
-<!-- Developed by Nikerla-->
+<!-- Developed by Nikerl, Emlz -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -34,14 +34,29 @@
                     function playAudio(url) {
                         new Audio(url).play();
                     }
-                </script>
 
+                </script>
+                
+                
                 <center>
                     <p style="font-family:protomolecule">
                         <font style="color:rgb(0, 175, 255); font-weight:bold">↑</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font style="color:rgb(0, 175, 255); font-weight:bold">↑</font>  
                         <br><br> klicka på mig för att gå med! 
                     </p>
                 </center>
+                <div id="embed-iframe">
+                    <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
+                    <script>
+                        window.onSpotifyIframeApiReady = (IFrameAPI) => {
+                        let element = document.getElementById('embed-iframe');
+                        let options = {
+                            uri: 'https://open.spotify.com/track/043dDJ9u0PQ3ooAXMgcwOe?si=90f2bba504d7454c'
+                          };
+                        let callback = (EmbedController) => {};
+                        IFrameAPI.createController(element, options, callback);
+                      };
+                      </script>
+                </div>
             </div>
         </div>
     </body>

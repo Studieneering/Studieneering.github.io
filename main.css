@@ -1,4 +1,4 @@
-/* Developed by Nikerla */
+/* Developed by Nikerl, Emlz */
 
 /* Body */
 html {
@@ -88,4 +88,14 @@ h1 {
 .image:hover {
   transform: none;
 }
+}
+
+/* IFrame */
+#embed-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-top: auto;
 }
