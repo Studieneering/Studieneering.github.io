@@ -1,5 +1,9 @@
 /* Developed by Nikerl, Emlz */
 
+:root {
+  --footer-height: 180px;
+}
+
 /* Body */
 html {
   overflow-x: hidden;
@@ -47,7 +51,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0);
 }
 #content-wrap {
-  padding-bottom: 200px;
+  padding-bottom: var(--footer-height);
   padding-top: 80px;
   padding-right: 30px;
   padding-left: 30px;
@@ -56,9 +60,8 @@ h1 {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 200px;
+  height: var(--footer-height);
   text-align: center;
-
 }
 
 /* Select */
@@ -86,6 +89,7 @@ body {
   width: 100%;
   background-image: none;
   margin: 0;
+  text-align: left;
 }    
 h1 {
   font-size: 11vw;
@@ -93,6 +97,9 @@ h1 {
 #page-container {
   box-shadow: none;
   border-radius: 0px;
+}
+#content-wrap {
+  padding-top: 20px;
 }
 .image {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
